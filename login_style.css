@@ -1,0 +1,38 @@
+#mainHeading{
+	background-color: #a0dd1a;
+	text-align: center;
+	font-size: 55px;
+	color: white;
+}
+#subHeading{
+	position: relative;
+	top:-15px;
+	background-color: #a0dd1a;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #a0dd1a;
+    outline: none;
+}
+
+input[type=button]{
+	background-color: #a0dd1a;
+    border: 3px solid black;
+    border-radius: 50px;    
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 50%;
+}
