@@ -1,22 +1,41 @@
 body {
+
     background-image: url("background_image1.jpg");
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #mainHeading{
+    position: sticky;
+    top: 0;
     text-align: center;
     font-size: 100px;
     font-family: Brush Script MT;
     color: white;
+    z-index: 1;
 }
+    
 #subHeading{
-    position: relative;
-    top:-20px;
+    position: fixed;
+    top:25%;
+    left: 46%;
     text-align: center;
     font-family: Times New Roman;
     color: white;
     font-size: 40px;
+    z-index: 1;
+}
+
+#page1_info{
+    position: relative;
+    top: 200px;
+    height: 500px;
+    background-color: black;
+    background-image: linear-gradient(black, white);
+    background: radial-gradient(circle, red, yellow, green);
+    opacity: 0;
+    z-index: 0;
+    
 }
 
 /* Full-width input fields */
@@ -31,17 +50,18 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    position: relative;
-    left: 46%;
-    border-radius: 4px;
-    border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+   position: fixed;
+   left: 44%;
+   z-index: 1;
+   border-radius: 4px;
+   border: none;
+   padding: 10px 18px;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 28px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
   
 }
 
@@ -73,7 +93,9 @@ button:hover span:after {
 /* Extra styles for the cancel and inner login button */
 .login_btn1{
     background-color: #f44336;
-    padding: 10px 18px;
+    position: fixed;
+    top: 50%;
+   
 }
 
 .login_btn2 {
@@ -94,7 +116,7 @@ button:hover span:after {
     width: auto;
     position: fixed;
     top: 60%;
-    left: 45%;
+    
     padding: 10px 18px;
     background-color: #f44336;
 }
@@ -134,7 +156,7 @@ span.psw {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
