@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		try
+	</title>
+	<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("splash_image.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#loadingProgressG{
+  position: absolute;
+  top: 95%;
+  left:45%;
+  width:200px;
+  height:10px;
+  overflow:hidden;
+ background-color:rgb(0,0,0);
+  margin:auto;
+  border-radius:3px;
+    -o-border-radius:3px;
+    -ms-border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+}
+
+.loadingProgressG{
+ background-color:rgba(255,255,255,0.71);
+  margin-top:0;
+  margin-left:-83px;
+  animation-name:bounce_loadingProgressG;
+    -o-animation-name:bounce_loadingProgressG;
+    -ms-animation-name:bounce_loadingProgressG;
+    -webkit-animation-name:bounce_loadingProgressG;
+    -moz-animation-name:bounce_loadingProgressG;
+  animation-duration:0.905s;
+    -o-animation-duration:0.905s;
+    -ms-animation-duration:0.905s;
+    -webkit-animation-duration:0.905s;
+    -moz-animation-duration:0.905s;
+  animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+  animation-timing-function:linear;
+    -o-animation-timing-function:linear;
+    -ms-animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-timing-function:linear;
+  width:200px;
+  height:10px;
+}
+
+
+
+@keyframes bounce_loadingProgressG{
+  0%{
+    margin-left:-83px;
+  }
+
+  100%{
+    margin-left:83px;
+  }
+}
+
+@-o-keyframes bounce_loadingProgressG{
+  0%{
+    margin-left:-83px;
+  }
+
+  100%{
+    margin-left:83px;
+  }
+}
+
+@-ms-keyframes bounce_loadingProgressG{
+  0%{
+    margin-left:-83px;
+  }
+
+  100%{
+    margin-left:83px;
+  }
+}
+
+@-webkit-keyframes bounce_loadingProgressG{
+  0%{
+    margin-left:-83px;
+  }
+
+  100%{
+    margin-left:83px;
+  }
+}
+
+@-moz-keyframes bounce_loadingProgressG{
+  0%{
+    margin-left:-83px;
+  }
+
+  100%{
+    margin-left:83px;
+  }
+}
+
+
+@keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-o-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-ms-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-webkit-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-moz-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+</style>
+          <script type='text/javascript'>
+             
+              function timeout()
+              {
+                setTimeout("redirect()",1500);
+              }
+             function redirect()
+             {
+                 window.location = "modal_login.html"
+                 return
+             }
+        </script>
+</head>
+  <body onload="timeout()">
+<div class="bg">
+<div id="loadingProgressG">
+  <div id="loadingProgressG_1" class="loadingProgressG"></div>
+</div>
+</div>
+  </body>
+</html>
