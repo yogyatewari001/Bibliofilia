@@ -58,3 +58,24 @@ body {
     text-align: center; 
 }
 
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
