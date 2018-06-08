@@ -1,26 +1,43 @@
+body{
+  background-image: url("background_image1.jpg");
+}
+
 #mainHeading{
-	background-color: #a0dd1a;
-	text-align: left;
-	font-size: 55px;
-	color: white;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    text-align: center;
+    font-size: 100px;
+    font-family: Brush Script MT;
+    color: white;
+    z-index: 1;
 }
+
+    
 #subHeading{
-  top:-15px;
-  text-decoration: underline;
-  text-align: center;
-  color: darkgreen;
-  font-size: 25px;
+    position: absolute;
+    top:20%;
+    left: 47%;
+    font-family: Times New Roman;
+    text-decoration: underline;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
 }
+
+#page1_info{
+    position: relative;
+    top: 500px;
+    height: 500px;
+    background-color: black;
+    background-image: linear-gradient(black, white);
+    background: radial-gradient(circle, red, yellow, green);
+    opacity: 0;
+    z-index: 0;
+    
+}
+
 #sub2{
-  position: fixed;
-  top: 30%;
-  left: 60%;
-  text-decoration: underline;
-  
-  color: lightgreen;
-  font-size: 25px;
-}
-#sub3{
   position: fixed;
   top: 40%;
   left: 60%;
@@ -28,6 +45,13 @@
   
   color: lightgreen;
   font-size: 25px;
+}
+#sub3{
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  color: white;
+  font-size: 30px;
 }
 #sub5{
   position: fixed;
@@ -45,6 +69,8 @@
   color: black;
   font-size: 25px;
 }
+
+
 /* Customize the label (the container) */
 .container {
   display: block;
@@ -170,4 +196,18 @@
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+#book_image{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 1;
+  border: 3px solid white;
+  width: 300px;
+  height: 450px;
+}
+#book_image img{
+  width: 100%;
+  height: 100%;
 }
