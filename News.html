@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="manifest" href="/manifest.json">
+	<title>News:Bibliofilia</title>
+	<link rel="stylesheet" href="About_style.css">
+
+  <style> 
+#animax {
+    width: 144px;
+    height: 144px;
+    background-image: url("animax_logo.png");
+    position: relative;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background-image: url("animax_logo.png"); left:0px; top:0px;}
+    25%  {background-image: url("animax_logo.png"); left: 85%; top:0px;}
+    100% {background-image: url("animax_logo.png"); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background-image: url("animax_logo.png"); left:0px; top:0px;}
+    25%  {background-image: url("animax_logo.png"); left: 85%; top:0px;}
+    100% {background-image: url("animax_logo.png"); left:0px; top:0px;}
+}
+</style>
+
+</head>
+
+<body>
+  
+	<h1 id="mainHeading">Biblio<span style=" font-size: 150%; color: black; font-style: italic;">f</span>ilia</h1>
+  <div id="animax"></div>
+  <ul>
+  <li><a id="menu_text" href="About.html">About</a></li>
+  <li><a id="menu_text" href="Homepage.html">Home</a></li>
+  <li><a id="menu_text" class="active" href="News.html">News</a></li>
+  <li><a id="menu_text" href="Contact.html">Contact</a></li>
+  </ul>
+
+
+<div class="back_element"></div>
+<p><marquee id="mQ">Book fairs near you!</marquee><br><br> BookWorms Barnacle is pleased to announce that it shall be hosting book fairs near your home! So mark the date and hurry to the stall center for the best deals on books. <br><br>Bangalore: 8<sup>th</sup> of July <br>Mumbai: 10<sup>th</sup> of July <br>
+Delhi: 15<sup>th</sup> of July<br>
+Dehradun: 17<sup>th</sup> of July </p>
+
+</body>
+
+</html>

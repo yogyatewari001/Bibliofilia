@@ -1,0 +1,81 @@
+body{
+	background-image: url("background_image4.jpg");
+	background-size: 100%;
+}
+
+#mainHeading{
+	text-align: center;
+	font-size: 650%;
+	color: white;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#menu_text{
+	font-size: 350%;
+
+}
+
+.bookDisplay_box{
+    background-image: linear-gradient(lightgrey, white);
+    border: 1px solid black;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    width: 90%;
+}
+
+.book_elements{
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: relative;
+    top:25%;
+    text-align: center; 
+}
+
+.summary{
+	position: relative;
+	top: -410px;
+	color: white;
+	height: 300px;
+	width: 85%;
+	font-size: 250%;
+	margin: auto;
+	overflow: hidden;
+}
+.book_cover{
+    align-self: center;
+	align-content: center; 
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

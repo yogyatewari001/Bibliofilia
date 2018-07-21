@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="manifest" href="/manifest.json">
+	<title>Book Details</title>
+	<link rel="stylesheet" href="book_details_style.css">
+
+  <style> 
+#animax {
+    width: 144px;
+    height: 144px;
+    background-image: url("animax_logo.png");
+    position: relative;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background-image: url("animax_logo.png"); left:0px; top:0px;}
+    25%  {background-image: url("animax_logo.png"); left: 85%; top:0px;}
+    100% {background-image: url("animax_logo.png"); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background-image: url("animax_logo.png"); left:0px; top:0px;}
+    25%  {background-image: url("animax_logo.png"); left: 85%; top:0px;}
+    100% {background-image: url("animax_logo.png"); left:0px; top:0px;}
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+	<h1 id="mainHeading">Biblio<span style=" font-size: 150%; color: black; font-style: italic;">f</span>ilia</h1>
+  <div id="animax"></div>
+  <ul>
+  <li><a id="menu_text" href="About.html">About</a></li>
+  <li><a id="menu_text" href="Homepage.html">Home</a></li>
+  <li><a id="menu_text" href="News.html">News</a></li>
+  <li><a id="menu_text" href="Contact.html">Contact</a></li>
+  </ul>
+<br>
+<h2 class="book_elements"  style="color: white;">Book Title</h2>
+<h3 class="book_elements">Author</h3>
+
+<div class="book_cover"><img src="image8.jpg" style="border: 2px solid black;  object-fit: fill; width: 450px;
+    height: 600px;"></div><br>
+
+<div class="back_element"></div>
+
+
+<p><br><br> Description of the book. Details about the author. Book genre listing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Book description and summary goes here. </p>
+
+
+</body>
+
+</html>

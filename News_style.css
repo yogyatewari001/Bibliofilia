@@ -1,0 +1,70 @@
+body{
+	background-image: url("background_image4.jpg");
+	background-size: 100%;
+}
+
+#mainHeading{
+	text-align: center;
+	font-size: 650%;
+	color: white;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#menu_text{
+	font-size: 350%;
+
+}
+
+.back_element{
+	background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 1300px;
+	width: 85%;
+	position: relative;
+	top: 130px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+p{
+	color: white;
+	position: relative;
+	top: -1000px;
+	width: 75%;
+	margin: auto;
+	z-index: 1;
+	font-size: 350%;
+}
+#mQ{
+	font-size: 150%;
+
+}

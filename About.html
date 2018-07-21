@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="manifest" href="/manifest.json">
+	<title>About:Bibliofilia</title>
+	<link rel="stylesheet" href="About_style.css">
+
+  <style> 
+#animax {
+    width: 144px;
+    height: 144px;
+    background-image: url("animax_logo.png");
+    position: relative;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background-image: url("animax_logo.png"); left:0px; top:0px;}
+    25%  {background-image: url("animax_logo.png"); left: 85%; top:0px;}
+    100% {background-image: url("animax_logo.png"); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background-image: url("animax_logo.png"); left:0px; top:0px;}
+    25%  {background-image: url("animax_logo.png"); left: 85%; top:0px;}
+    100% {background-image: url("animax_logo.png"); left:0px; top:0px;}
+}
+</style>
+
+</head>
+
+<body>
+  
+	<h1 id="mainHeading">Biblio<span style=" font-size: 150%; color: black; font-style: italic;">f</span>ilia</h1>
+  <div id="animax"></div>
+  <ul>
+  <li><a id="menu_text" class="active" href="About.html">About</a></li>
+  <li><a id="menu_text" href="Homepage.html">Home</a></li>
+  <li><a id="menu_text" href="News.html">News</a></li>
+  <li><a id="menu_text" href="Contact.html">Contact</a></li>
+  </ul>
+  <br>
+  <br>
+
+  <div id="video_box">
+    <video width="100%" height="350" controls>
+  <source src="intro_vid.mp4" type="video/mp4">
+</video>
+  </div>
+
+
+<div class="back_element"></div>
+<p><marquee id="mQ">Welcome to  Bibliofilia: A place for books and book lovers!</marquee><br><br> Bibliophilia is a platform that
+gives to the viewers the top trending book picks and other content such as the newest book cover art, accurate summary of the books as well as some nuggets of information about the author. You will also receive updates in the News section about any book fairs near you. Not sure what to read next? Find out here... </p>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw1.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+</body>
+
+</html>
